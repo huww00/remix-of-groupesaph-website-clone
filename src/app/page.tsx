@@ -1,30 +1,23 @@
-import HeaderNavigation from "@/components/sections/header-navigation";
-import HeroSection from "@/components/sections/hero-section";
+import GlassHeaderNavigation from "@/components/sections/glass-header-navigation";
+import GlassHeroSection from "@/components/sections/glass-hero-section";
 import ClientLogos from "@/components/sections/client-logos";
-import SolutionsMobiles from "@/components/sections/solutions-mobiles";
-import CommunicationsCollaboration from "@/components/sections/communications-collaboration";
-import NetworksSecurity from "@/components/sections/networks-security";
+import GlassFeaturesSection from "@/components/sections/glass-features-section";
 import ClientTestimonials from "@/components/sections/client-testimonials";
-import ContactSection from "@/components/sections/contact-section";
-import Footer from "@/components/sections/footer";
+import GlassContactSection from "@/components/sections/glass-contact-section";
+import GlassFooter from "@/components/sections/glass-footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <HeaderNavigation />
+      <GlassHeaderNavigation />
       <main id="content">
-        <HeroSection />
+        <GlassHeroSection />
         <ClientLogos />
-        <div className="space-y-0">
-          <SolutionsMobiles />
-          <CommunicationsCollaboration />
-          <NetworksSecurity />
-        </div>
+        <GlassFeaturesSection />
         <ClientTestimonials />
-        {/* <NewsSection /> */}
-        <ContactSection />
+        <GlassContactSection />
       </main>
-      <Footer />
+      <GlassFooter />
     </div>
   );
 }
